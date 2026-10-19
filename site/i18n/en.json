@@ -1,0 +1,209 @@
+{
+  "meta": {
+    "title": "Satsuma — free offline file converter for Windows",
+    "description": "Drag a file, tap Shift, drop it on the wheel. Satsuma converts and edits images, video, audio, PDFs and documents right in File Explorer — offline, free and open source."
+  },
+  "nav": {
+    "skip": "Skip to content",
+    "label": "Main",
+    "how": "How it works",
+    "inside": "Features",
+    "privacy": "Privacy",
+    "faq": "FAQ",
+    "language": "Language"
+  },
+  "hero": {
+    "eyebrow": "Free · Offline · Open source",
+    "title": "Convert any file without leaving File Explorer.",
+    "lead": "Start dragging a file, tap {shift}, and a wheel of formats opens under your cursor. Drop it on a wedge and you're done — right on your PC, with nothing uploaded.",
+    "download": "Download for Windows",
+    "version": "Version {version}",
+    "size": "{size} MB",
+    "system": "Windows 10/11 · 64-bit · Free &amp; open source",
+    "portable": "Portable ZIP",
+    "all_releases": "All releases",
+    "soon": "The first public release is almost ready — the download opens here soon."
+  },
+  "img": {
+    "wheel_convert": "The Satsuma Convert wheel open over a photo, offering PNG, WebP, HEIC, TIFF, AVIF, BMP, ICO and PDF",
+    "wheel_tools": "The Satsuma Tools wheel for an image: Compress, Edit, Crop, Annotate, Add background, Metadata and Redact",
+    "wheel_actions": "The Satsuma Actions wheel: Share, Float, Copy, Move, Copy Path, Terminal, Reveal, Rename and Hash",
+    "welcome": "The Satsuma welcome window explaining the Shift, Ctrl and Alt wheels"
+  },
+  "how": {
+    "eyebrow": "How it works",
+    "title": "Drag. Tap. Drop.",
+    "sub": "No windows to open, no menus to dig through. Satsuma waits quietly in the system tray until you need it.",
+    "steps": [
+      {
+        "title": "Start dragging",
+        "body": "Pick up any file, folder or selection in File Explorer and keep the mouse button held down."
+      },
+      {
+        "title": "Tap a key",
+        "body": "Tap {shift} to convert, {ctrl} for tools or {alt} for file actions. The wheel opens right under your cursor."
+      },
+      {
+        "title": "Drop on a wedge",
+        "body": "Let go over the option you want — the result is saved next to the original. Drop in the middle or press {esc} to cancel."
+      }
+    ],
+    "wheels": {
+      "convert": {
+        "title": "Convert formats",
+        "body": "{convert_count} targets for images, audio, video, PDFs, documents and more"
+      },
+      "tools": {
+        "title": "File tools",
+        "body": "{tools_count} tools to compress, crop, trim, merge, protect and more"
+      },
+      "actions": {
+        "title": "File actions",
+        "body": "{actions_count} actions: share, move, copy the path, rename, hash and more"
+      }
+    },
+    "more": "Prefer clicking? Use the drop zone from the tray icon, or turn on <strong>Send to → Satsuma</strong> and the right-click menu in Settings. The keys can be changed there too."
+  },
+  "inside": {
+    "eyebrow": "What's inside",
+    "title": "One wheel for every kind of file",
+    "sub": "The wheel only shows what fits the files you're dragging: photos get image formats, PDFs get PDF tools.",
+    "formats_title": "Convert — {convert_count} targets",
+    "tools_title": "File tools — {tools_count} tools",
+    "actions_title": "File actions — {actions_count} actions",
+    "from": "From",
+    "to": "To",
+    "families": {
+      "images": { "name": "Images", "note": "Reads SVG and GIF too. Several images can become one PDF." },
+      "audio": { "name": "Audio", "note": "Every audio format converts to every other." },
+      "video": { "name": "Video", "note": "Make an animated GIF or keep just the soundtrack as MP3." },
+      "pdf": { "name": "PDF", "note": "Turn PDFs into editable Word, PowerPoint and Excel files, images or text." },
+      "documents": { "name": "Documents", "note": "Uses Microsoft Office or LibreOffice when installed, built-in converters otherwise. Pages files export their preview." },
+      "slides": { "name": "Presentations", "note": "Needs PowerPoint or LibreOffice." },
+      "sheets": { "name": "Spreadsheets", "note": "Switch between formats or export a sheet as PDF or a web page." },
+      "subtitles": { "name": "Subtitles", "note": "Switch between SRT and VTT, or keep just the text." },
+      "archives": { "name": "Archives", "note": "Extract, repack, or pack any selection into a new archive." }
+    },
+    "tools": {
+      "image": {
+        "title": "Images",
+        "items": ["Compress", "Edit", "Crop", "Annotate", "Redact", "Add background", "Collage", "Create PDF", "Metadata"]
+      },
+      "video": {
+        "title": "Video",
+        "items": ["Compress", "Trim", "Split", "Merge", "Rotate", "Mute", "Resize", "Speed", "Save frames"]
+      },
+      "audio": {
+        "title": "Audio",
+        "items": ["Trim", "Merge", "Compress", "Normalize", "Split", "Fade in/out"]
+      },
+      "pdf": {
+        "title": "PDF",
+        "items": ["Merge", "Compress", "Split", "Rotate", "Extract pages", "Delete pages", "Protect", "Unlock", "Watermark", "Page numbers"]
+      }
+    },
+    "actions": [
+      { "name": "Share", "body": "Send files with the Windows share sheet" },
+      { "name": "Float", "body": "Park files on a floating shelf for later" },
+      { "name": "Copy", "body": "Copy to the clipboard, ready to paste" },
+      { "name": "Move", "body": "Move to any folder" },
+      { "name": "Copy Path", "body": "Copy the full paths as text" },
+      { "name": "Terminal", "body": "Open a terminal in that folder" },
+      { "name": "Reveal", "body": "Show the files in File Explorer" },
+      { "name": "Rename", "body": "Rename in batches with a live preview" },
+      { "name": "Hash", "body": "SHA-256, SHA-1 and MD5 checksums" }
+    ]
+  },
+  "privacy": {
+    "eyebrow": "Privacy",
+    "title": "Your files never leave your PC.",
+    "lead": "Online converters ask you to upload your photos, contracts and recordings to someone else's server. Satsuma does all the work on your own computer.",
+    "points": [
+      "No uploads: every conversion runs locally, with the engines built into the app.",
+      "Works offline: no internet connection needed, ever.",
+      "No account, no ads, no analytics, no telemetry.",
+      "This website doesn't use cookies or trackers either."
+    ]
+  },
+  "languages": {
+    "eyebrow": "Languages",
+    "title": "Speaks your language",
+    "lead": "Satsuma follows your Windows display language, including right-to-left Arabic. You can switch at any time in Settings → General → Language.",
+    "note": "Missing your language? Translations are plain JSON files, and new ones are very welcome."
+  },
+  "oss": {
+    "eyebrow": "Open source",
+    "title": "Free software, made in the open",
+    "body": "Satsuma is licensed under the GNU AGPL-3.0. Anyone can read the code, build it, improve it and share it.",
+    "points": [
+      "The full source code is public on GitHub.",
+      "Bug reports, ideas and pull requests are welcome.",
+      "Help translate Satsuma into more languages."
+    ],
+    "source": "View source",
+    "issues": "Report a bug",
+    "translate": "Help translate",
+    "license": "AGPL-3.0 license"
+  },
+  "support": {
+    "eyebrow": "Support",
+    "title": "Free forever, kept going by people like you",
+    "body": "Satsuma has no ads, no paid tier and nothing to upsell. If it saves you time, a small tip on Ko-fi helps pay for the hours that go into new formats, fixes and translations.",
+    "body_nodonate": "Satsuma has no ads, no paid tier and nothing to upsell — and it never will.",
+    "donate": "Support on Ko-fi",
+    "other": "Can't donate? Telling a friend, reporting a bug or translating a few lines helps just as much."
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Questions and answers",
+    "items": [
+      {
+        "q": "Is Satsuma really free?",
+        "a": "Yes. Satsuma is free and open source under the AGPL-3.0 license: no trial, no watermarks, no account and no ads. Its development is supported by voluntary donations."
+      },
+      {
+        "q": "Why does Windows show a SmartScreen warning?",
+        "a": "Satsuma is an open-source project and its builds aren't code-signed yet, because signing certificates are expensive. Windows SmartScreen warns about any unsigned app that hasn't been downloaded many times. To continue, click <strong>More info</strong> → <strong>Run anyway</strong>. If you'd like to check first, the full source code is public and you can build it yourself."
+      },
+      {
+        "q": "Does it need an internet connection?",
+        "a": "No. Converting, compressing and editing all happen on your PC with engines bundled in the app. Satsuma never uploads your files and doesn't phone home."
+      },
+      {
+        "q": "Which versions of Windows are supported?",
+        "a": "Windows 10 and Windows 11, 64-bit. The installer doesn't need administrator rights — it installs Satsuma for your user account only."
+      },
+      {
+        "q": "Do I need Microsoft Office?",
+        "a": "Not for most things. Images, audio, video, PDFs, subtitles and archives are handled entirely by Satsuma. For documents and spreadsheets it uses Microsoft Office or LibreOffice when one is installed, for the best results, and its built-in converters otherwise. Presentations (PPT, PPTX, ODP) need PowerPoint or the free LibreOffice."
+      },
+      {
+        "q": "Can I change the keys?",
+        "a": "Yes. Open Settings from the tray icon to pick another key for each wheel, or to turn on <strong>Send to → Satsuma</strong> and the right-click menu in File Explorer."
+      },
+      {
+        "q": "How do I uninstall Satsuma?",
+        "a": "Open Windows Settings → Apps → Installed apps (Apps &amp; features on Windows 10), find Satsuma and choose Uninstall. Using the portable ZIP? Quit Satsuma from its tray icon and delete its folder."
+      },
+      {
+        "q": "Where are my settings stored?",
+        "a": "In {appdata}, together with the log file. Delete that folder to reset Satsuma, or to remove every trace of it after uninstalling."
+      }
+    ]
+  },
+  "final": {
+    "title": "Ready when you are",
+    "lead": "Download Satsuma, drag your first file and tap {shift}."
+  },
+  "footer": {
+    "copyright": "{year} {author}",
+    "source": "Source code",
+    "donate": "Donate",
+    "privacy": "This site uses no cookies, trackers or analytics."
+  },
+  "notfound": {
+    "title": "Page not found",
+    "body": "This page doesn't exist — but your files are still safe on your PC.",
+    "home": "Back to Satsuma"
+  }
+}

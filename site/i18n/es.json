@@ -1,0 +1,209 @@
+{
+  "meta": {
+    "title": "Satsuma — conversor de archivos gratis y sin conexión para Windows",
+    "description": "Arrastra un archivo, presiona Shift y suéltalo en la rueda. Satsuma convierte y edita imágenes, video, audio, PDF y documentos desde el Explorador de archivos: sin conexión, gratis y de código abierto."
+  },
+  "nav": {
+    "skip": "Ir al contenido",
+    "label": "Principal",
+    "how": "Cómo funciona",
+    "inside": "Funciones",
+    "privacy": "Privacidad",
+    "faq": "Preguntas",
+    "language": "Idioma"
+  },
+  "hero": {
+    "eyebrow": "Gratis · Sin conexión · Código abierto",
+    "title": "Convierte cualquier archivo sin salir del Explorador.",
+    "lead": "Empieza a arrastrar un archivo, presiona {shift} y se abre una rueda de formatos bajo el cursor. Suéltalo en un sector y listo: todo ocurre en tu PC, sin subir nada.",
+    "download": "Descargar para Windows",
+    "version": "Versión {version}",
+    "size": "{size} MB",
+    "system": "Windows 10/11 · 64 bits · Gratis y de código abierto",
+    "portable": "ZIP portátil",
+    "all_releases": "Todas las versiones",
+    "soon": "La primera versión pública está casi lista: la descarga estará disponible aquí muy pronto."
+  },
+  "img": {
+    "wheel_convert": "La rueda Convertir de Satsuma abierta sobre una foto, con PNG, WebP, HEIC, TIFF, AVIF, BMP, ICO y PDF",
+    "wheel_tools": "La rueda Herramientas de Satsuma para una imagen: Comprimir, Editar, Recortar, Anotar, Fondo, Metadatos y Censurar",
+    "wheel_actions": "La rueda Acciones de Satsuma: Compartir, Estante, Copiar, Mover, Copiar ruta, Terminal, Mostrar, Renombrar y Hash",
+    "welcome": "La ventana de bienvenida de Satsuma, que explica las ruedas de Shift, Ctrl y Alt"
+  },
+  "how": {
+    "eyebrow": "Cómo funciona",
+    "title": "Arrastra. Presiona. Suelta.",
+    "sub": "Sin ventanas que abrir ni menús que recorrer. Satsuma espera en silencio en el área de notificación hasta que lo necesites.",
+    "steps": [
+      {
+        "title": "Empieza a arrastrar",
+        "body": "Toma cualquier archivo, carpeta o selección en el Explorador de archivos y mantén pulsado el botón del mouse."
+      },
+      {
+        "title": "Presiona una tecla",
+        "body": "Presiona {shift} para convertir, {ctrl} para las herramientas o {alt} para las acciones de archivo. La rueda se abre justo bajo el cursor."
+      },
+      {
+        "title": "Suelta en un sector",
+        "body": "Suelta sobre la opción que quieras: el resultado se guarda junto al original. Suelta en el centro o presiona {esc} para cancelar."
+      }
+    ],
+    "wheels": {
+      "convert": {
+        "title": "Convertir formatos",
+        "body": "{convert_count} formatos de destino para imágenes, audio, video, PDF, documentos y más"
+      },
+      "tools": {
+        "title": "Herramientas de archivo",
+        "body": "{tools_count} herramientas para comprimir, recortar, acortar, combinar, proteger y más"
+      },
+      "actions": {
+        "title": "Acciones de archivo",
+        "body": "{actions_count} acciones: compartir, mover, copiar la ruta, renombrar, hash y más"
+      }
+    },
+    "more": "¿Prefieres hacer clic? Usa la zona para soltar del icono del área de notificación, o activa <strong>Enviar a → Satsuma</strong> y el menú contextual en Configuración. Ahí también puedes cambiar las teclas."
+  },
+  "inside": {
+    "eyebrow": "Qué incluye",
+    "title": "Una rueda para cada tipo de archivo",
+    "sub": "La rueda solo muestra lo que encaja con los archivos que arrastras: las fotos ven formatos de imagen; los PDF, herramientas de PDF.",
+    "formats_title": "Convertir — {convert_count} destinos",
+    "tools_title": "Herramientas de archivo — {tools_count} herramientas",
+    "actions_title": "Acciones de archivo — {actions_count} acciones",
+    "from": "De",
+    "to": "A",
+    "families": {
+      "images": { "name": "Imágenes", "note": "También lee SVG y GIF. Varias imágenes pueden convertirse en un solo PDF." },
+      "audio": { "name": "Audio", "note": "Cada formato de audio se convierte a cualquier otro." },
+      "video": { "name": "Video", "note": "Crea un GIF animado o quédate solo con el audio en MP3." },
+      "pdf": { "name": "PDF", "note": "Convierte PDF en archivos editables de Word, PowerPoint y Excel, en imágenes o en texto." },
+      "documents": { "name": "Documentos", "note": "Usa Microsoft Office o LibreOffice si están instalados y, si no, los conversores integrados. Los archivos Pages exportan su vista previa." },
+      "slides": { "name": "Presentaciones", "note": "Requiere PowerPoint o LibreOffice." },
+      "sheets": { "name": "Hojas de cálculo", "note": "Cambia de formato o exporta una hoja como PDF o página web." },
+      "subtitles": { "name": "Subtítulos", "note": "Cambia entre SRT y VTT, o quédate solo con el texto." },
+      "archives": { "name": "Archivos comprimidos", "note": "Extrae, vuelve a empaquetar o comprime cualquier selección en un archivo nuevo." }
+    },
+    "tools": {
+      "image": {
+        "title": "Imágenes",
+        "items": ["Comprimir", "Editar", "Recortar", "Anotar", "Censurar", "Añadir fondo", "Collage", "Crear PDF", "Metadatos"]
+      },
+      "video": {
+        "title": "Video",
+        "items": ["Comprimir", "Acortar", "Dividir", "Combinar", "Girar", "Silenciar", "Cambiar tamaño", "Velocidad", "Guardar cuadros"]
+      },
+      "audio": {
+        "title": "Audio",
+        "items": ["Acortar", "Combinar", "Comprimir", "Normalizar", "Dividir", "Fundido de entrada/salida"]
+      },
+      "pdf": {
+        "title": "PDF",
+        "items": ["Combinar", "Comprimir", "Dividir", "Girar", "Extraer páginas", "Borrar páginas", "Proteger", "Quitar clave", "Marca de agua", "Numerar páginas"]
+      }
+    },
+    "actions": [
+      { "name": "Compartir", "body": "Envía archivos con el panel Compartir de Windows" },
+      { "name": "Estante", "body": "Deja archivos en un estante flotante para después" },
+      { "name": "Copiar", "body": "Copia al portapapeles, listo para pegar" },
+      { "name": "Mover", "body": "Mueve a cualquier carpeta" },
+      { "name": "Copiar ruta", "body": "Copia las rutas completas como texto" },
+      { "name": "Terminal", "body": "Abre una terminal en esa carpeta" },
+      { "name": "Mostrar", "body": "Muestra los archivos en el Explorador de archivos" },
+      { "name": "Renombrar", "body": "Renombra en lote con vista previa en vivo" },
+      { "name": "Hash", "body": "Sumas de comprobación SHA-256, SHA-1 y MD5" }
+    ]
+  },
+  "privacy": {
+    "eyebrow": "Privacidad",
+    "title": "Tus archivos nunca salen de tu PC.",
+    "lead": "Los conversores en línea te piden subir tus fotos, contratos y grabaciones al servidor de otra persona. Satsuma hace todo el trabajo en tu propia computadora.",
+    "points": [
+      "Nada se sube: cada conversión se ejecuta en tu equipo con los motores integrados en la app.",
+      "Funciona sin conexión: nunca necesita internet.",
+      "Sin cuenta, sin anuncios, sin analíticas, sin telemetría.",
+      "Este sitio web tampoco usa cookies ni rastreadores."
+    ]
+  },
+  "languages": {
+    "eyebrow": "Idiomas",
+    "title": "Habla tu idioma",
+    "lead": "Satsuma sigue el idioma de visualización de Windows, incluido el árabe de derecha a izquierda. Puedes cambiarlo cuando quieras en Configuración → General → Idioma.",
+    "note": "¿Falta tu idioma? Las traducciones son simples archivos JSON y las nuevas son muy bienvenidas."
+  },
+  "oss": {
+    "eyebrow": "Código abierto",
+    "title": "Software libre, hecho a la vista de todos",
+    "body": "Satsuma se distribuye bajo la licencia GNU AGPL-3.0. Cualquiera puede leer el código, compilarlo, mejorarlo y compartirlo.",
+    "points": [
+      "Todo el código fuente es público en GitHub.",
+      "Los reportes de errores, las ideas y los pull requests son bienvenidos.",
+      "Ayuda a traducir Satsuma a más idiomas."
+    ],
+    "source": "Ver el código",
+    "issues": "Reportar un error",
+    "translate": "Ayudar a traducir",
+    "license": "Licencia AGPL-3.0"
+  },
+  "support": {
+    "eyebrow": "Apoyo",
+    "title": "Gratis para siempre, gracias a personas como tú",
+    "body": "Satsuma no tiene anuncios, ni versión de pago, ni nada que venderte. Si te ahorra tiempo, una pequeña donación en Ko-fi ayuda a cubrir las horas que se dedican a nuevos formatos, correcciones y traducciones.",
+    "body_nodonate": "Satsuma no tiene anuncios, ni versión de pago, ni nada que venderte, y nunca los tendrá.",
+    "donate": "Apoyar en Ko-fi",
+    "other": "¿No puedes donar? Recomendarlo a un amigo, reportar un error o traducir unas líneas ayuda igual."
+  },
+  "faq": {
+    "eyebrow": "Preguntas frecuentes",
+    "title": "Preguntas y respuestas",
+    "items": [
+      {
+        "q": "¿Satsuma es realmente gratis?",
+        "a": "Sí. Satsuma es gratis y de código abierto bajo la licencia AGPL-3.0: sin período de prueba, sin marcas de agua, sin cuenta y sin anuncios. Su desarrollo se sostiene con donaciones voluntarias."
+      },
+      {
+        "q": "¿Por qué Windows muestra una advertencia de SmartScreen?",
+        "a": "Satsuma es un proyecto de código abierto y sus compilaciones todavía no tienen firma digital, porque los certificados de firma son caros. Windows SmartScreen advierte sobre cualquier app sin firmar que aún no se ha descargado muchas veces. Para continuar, haz clic en <strong>Más información</strong> → <strong>Ejecutar de todas formas</strong>. Si prefieres revisarlo antes, todo el código fuente es público y puedes compilarlo tú mismo."
+      },
+      {
+        "q": "¿Necesita conexión a internet?",
+        "a": "No. Convertir, comprimir y editar ocurre en tu PC con motores incluidos en la app. Satsuma nunca sube tus archivos ni envía datos a ningún lado."
+      },
+      {
+        "q": "¿Qué versiones de Windows son compatibles?",
+        "a": "Windows 10 y Windows 11 de 64 bits. El instalador no necesita permisos de administrador: instala Satsuma solo para tu cuenta de usuario."
+      },
+      {
+        "q": "¿Necesito Microsoft Office?",
+        "a": "Para casi nada. Satsuma maneja por sí solo imágenes, audio, video, PDF, subtítulos y archivos comprimidos. Para documentos y hojas de cálculo usa Microsoft Office o LibreOffice si alguno está instalado, para obtener el mejor resultado, y sus conversores integrados si no. Las presentaciones (PPT, PPTX, ODP) requieren PowerPoint o el gratuito LibreOffice."
+      },
+      {
+        "q": "¿Puedo cambiar las teclas?",
+        "a": "Sí. Abre Configuración desde el icono del área de notificación para elegir otra tecla para cada rueda, o para activar <strong>Enviar a → Satsuma</strong> y el menú contextual del Explorador de archivos."
+      },
+      {
+        "q": "¿Cómo desinstalo Satsuma?",
+        "a": "Abre Configuración de Windows → Aplicaciones → Aplicaciones instaladas (Aplicaciones y características en Windows 10), busca Satsuma y elige Desinstalar. ¿Usas el ZIP portátil? Cierra Satsuma desde su icono del área de notificación y borra su carpeta."
+      },
+      {
+        "q": "¿Dónde se guarda mi configuración?",
+        "a": "En {appdata}, junto con el archivo de registro. Borra esa carpeta para restablecer Satsuma o para eliminar cualquier rastro después de desinstalarlo."
+      }
+    ]
+  },
+  "final": {
+    "title": "Listo cuando tú lo estés",
+    "lead": "Descarga Satsuma, arrastra tu primer archivo y presiona {shift}."
+  },
+  "footer": {
+    "copyright": "{year} {author}",
+    "source": "Código fuente",
+    "donate": "Donar",
+    "privacy": "Este sitio no usa cookies, rastreadores ni analíticas."
+  },
+  "notfound": {
+    "title": "Página no encontrada",
+    "body": "Esta página no existe, pero tus archivos siguen a salvo en tu PC.",
+    "home": "Volver a Satsuma"
+  }
+}

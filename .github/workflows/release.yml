@@ -1,0 +1,39 @@
+name: Release
+
+# Push a tag like v0.1.0 (matching satsuma/__init__.py) to build and publish
+# Satsuma-Setup.exe and Satsuma-win64.zip as a GitHub Release.
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install dependencies
+        run: |
+          python -m venv .venv
+          .venv\Scripts\python.exe -m pip install -r requirements.txt
+      - name: Check the tag matches the app version
+        shell: pwsh
+        run: |
+          $v = .venv\Scripts\python.exe -c "import satsuma; print(satsuma.__version__)"
+          if ("v$v" -ne "${{ github.ref_name }}") { throw "tag ${{ github.ref_name }} != app version $v" }
+      - name: Build (tests, exe, self-test, installer, zip)
+        shell: pwsh
+        run: ./build.ps1
+      - name: Publish release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: pwsh
+        run: |
+          gh release create "${{ github.ref_name }}" dist/Satsuma-Setup.exe dist/Satsuma-win64.zip `
+            --title "Satsuma ${{ github.ref_name }}" --generate-notes

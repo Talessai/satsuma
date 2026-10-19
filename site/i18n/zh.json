@@ -1,0 +1,209 @@
+{
+  "meta": {
+    "title": "Satsuma — 免费的 Windows 离线文件转换器",
+    "description": "拖动文件，按下 Shift，放到轮盘上。Satsuma 直接在文件资源管理器中转换和编辑图像、视频、音频、PDF 和文档——离线、免费、开源。"
+  },
+  "nav": {
+    "skip": "跳到正文",
+    "label": "主导航",
+    "how": "使用方法",
+    "inside": "功能",
+    "privacy": "隐私",
+    "faq": "常见问题",
+    "language": "语言"
+  },
+  "hero": {
+    "eyebrow": "免费 · 离线 · 开源",
+    "title": "不离开文件资源管理器，转换任何文件。",
+    "lead": "开始拖动文件，按下 {shift}，格式轮盘就会在光标下方打开。放到扇区上即可完成——全部在你的电脑上处理，不上传任何内容。",
+    "download": "下载 Windows 版",
+    "version": "版本 {version}",
+    "size": "{size} MB",
+    "system": "Windows 10/11 · 64 位 · 免费开源",
+    "portable": "便携版 ZIP",
+    "all_releases": "所有版本",
+    "soon": "首个公开版本即将完成——下载很快就会在这里开放。"
+  },
+  "img": {
+    "wheel_convert": "Satsuma 的转换轮盘在一张照片上打开，提供 PNG、WebP、HEIC、TIFF、AVIF、BMP、ICO 和 PDF",
+    "wheel_tools": "图像的 Satsuma 工具轮盘：压缩、编辑、裁剪、标注、加背景、元数据和遮盖",
+    "wheel_actions": "Satsuma 操作轮盘：共享、暂存架、复制、移动、复制路径、终端、打开位置、重命名和哈希",
+    "welcome": "Satsuma 欢迎窗口，介绍 Shift、Ctrl 和 Alt 三个轮盘"
+  },
+  "how": {
+    "eyebrow": "使用方法",
+    "title": "拖动、按键、放下。",
+    "sub": "无需打开窗口，也不用翻找菜单。Satsuma 安静地待在系统托盘里，随时待命。",
+    "steps": [
+      {
+        "title": "开始拖动",
+        "body": "在文件资源管理器中拿起任意文件、文件夹或一组选中的文件，按住鼠标按钮不放。"
+      },
+      {
+        "title": "按下按键",
+        "body": "按 {shift} 转换格式，按 {ctrl} 使用工具，按 {alt} 执行文件操作。轮盘会在光标正下方打开。"
+      },
+      {
+        "title": "放到扇区上",
+        "body": "在想要的选项上松开——结果会保存在原文件旁边。放到中间或按 {esc} 即可取消。"
+      }
+    ],
+    "wheels": {
+      "convert": {
+        "title": "格式转换",
+        "body": "{convert_count} 种目标格式，涵盖图像、音频、视频、PDF、文档等"
+      },
+      "tools": {
+        "title": "文件工具",
+        "body": "{tools_count} 种工具：压缩、裁剪、修剪、合并、加密保护等"
+      },
+      "actions": {
+        "title": "文件操作",
+        "body": "{actions_count} 种操作：共享、移动、复制路径、重命名、哈希等"
+      }
+    },
+    "more": "更喜欢点击？可以使用托盘图标的放置区，或在“设置”中启用<strong>发送到 → Satsuma</strong> 和右键菜单。按键也可以在那里更改。"
+  },
+  "inside": {
+    "eyebrow": "功能一览",
+    "title": "一个轮盘，处理各种文件",
+    "sub": "轮盘只显示适合当前拖动文件的选项：照片显示图像格式，PDF 显示 PDF 工具。",
+    "formats_title": "格式转换 — {convert_count} 种目标格式",
+    "tools_title": "文件工具 — {tools_count} 种工具",
+    "actions_title": "文件操作 — {actions_count} 种操作",
+    "from": "输入",
+    "to": "输出",
+    "families": {
+      "images": { "name": "图像", "note": "也可读取 SVG 和 GIF。多张图像可以合成一个 PDF。" },
+      "audio": { "name": "音频", "note": "任意音频格式都能互相转换。" },
+      "video": { "name": "视频", "note": "生成 GIF 动图，或只提取音轨保存为 MP3。" },
+      "pdf": { "name": "PDF", "note": "把 PDF 转成可编辑的 Word、PowerPoint、Excel 文件，或图像、文本。" },
+      "documents": { "name": "文档", "note": "如已安装 Microsoft Office 或 LibreOffice 则优先使用，否则使用内置转换器。Pages 文件导出其预览。" },
+      "slides": { "name": "演示文稿", "note": "需要 PowerPoint 或 LibreOffice。" },
+      "sheets": { "name": "电子表格", "note": "在各格式间转换，或将工作表导出为 PDF 或网页。" },
+      "subtitles": { "name": "字幕", "note": "在 SRT 和 VTT 之间转换，或只保留文本。" },
+      "archives": { "name": "压缩包", "note": "解压、重新打包，或把任意选中内容打包成新压缩包。" }
+    },
+    "tools": {
+      "image": {
+        "title": "图像",
+        "items": ["压缩", "编辑", "裁剪", "标注", "遮盖", "加背景", "拼图", "创建 PDF", "元数据"]
+      },
+      "video": {
+        "title": "视频",
+        "items": ["压缩", "修剪", "拆分", "合并", "旋转", "静音", "调整大小", "速度", "导出帧"]
+      },
+      "audio": {
+        "title": "音频",
+        "items": ["修剪", "合并", "压缩", "标准化", "拆分", "淡入淡出"]
+      },
+      "pdf": {
+        "title": "PDF",
+        "items": ["合并", "压缩", "拆分", "旋转", "提取页面", "删除页面", "加密保护", "解除保护", "水印", "页码"]
+      }
+    },
+    "actions": [
+      { "name": "共享", "body": "通过 Windows 共享面板发送文件" },
+      { "name": "暂存架", "body": "把文件暂放在浮动暂存架上，稍后再用" },
+      { "name": "复制", "body": "复制到剪贴板，随时粘贴" },
+      { "name": "移动", "body": "移动到任意文件夹" },
+      { "name": "复制路径", "body": "以文本形式复制完整路径" },
+      { "name": "终端", "body": "在该文件夹中打开终端" },
+      { "name": "打开位置", "body": "在文件资源管理器中显示文件" },
+      { "name": "重命名", "body": "批量重命名，实时预览" },
+      { "name": "哈希", "body": "SHA-256、SHA-1 和 MD5 校验值" }
+    ]
+  },
+  "privacy": {
+    "eyebrow": "隐私",
+    "title": "你的文件永远不会离开你的电脑。",
+    "lead": "在线转换器需要你把照片、合同和录音上传到别人的服务器。Satsuma 则在你自己的电脑上完成所有工作。",
+    "points": [
+      "不上传：每次转换都在本地运行，使用应用内置的引擎。",
+      "离线可用：完全不需要联网。",
+      "无需账户，没有广告，没有分析，没有遥测。",
+      "本网站同样不使用 Cookie，也没有跟踪器。"
+    ]
+  },
+  "languages": {
+    "eyebrow": "语言",
+    "title": "说你的语言",
+    "lead": "Satsuma 跟随 Windows 显示语言，也支持从右到左书写的阿拉伯语。你可以随时在“设置 → 常规 → 语言”中切换。",
+    "note": "没有你的语言？翻译只是简单的 JSON 文件，非常欢迎贡献新的翻译。"
+  },
+  "oss": {
+    "eyebrow": "开源",
+    "title": "自由软件，公开开发",
+    "body": "Satsuma 采用 GNU AGPL-3.0 许可证。任何人都可以阅读代码、自行构建、改进并分享。",
+    "points": [
+      "完整源代码公开在 GitHub 上。",
+      "欢迎提交错误报告、想法和拉取请求。",
+      "欢迎帮助把 Satsuma 翻译成更多语言。"
+    ],
+    "source": "查看源代码",
+    "issues": "报告问题",
+    "translate": "帮助翻译",
+    "license": "AGPL-3.0 许可证"
+  },
+  "support": {
+    "eyebrow": "支持",
+    "title": "永久免费，因你而延续",
+    "body": "Satsuma 没有广告，没有付费版，也没有任何推销。如果它为你节省了时间，在 Ko-fi 上的一点小小捐助，就能帮助支付开发新格式、修复问题和翻译所投入的时间。",
+    "body_nodonate": "Satsuma 没有广告，没有付费版，也没有任何推销——将来也不会有。",
+    "donate": "在 Ko-fi 上支持",
+    "other": "暂时无法捐助？推荐给朋友、报告问题或翻译几行文字，同样很有帮助。"
+  },
+  "faq": {
+    "eyebrow": "常见问题",
+    "title": "问题与解答",
+    "items": [
+      {
+        "q": "Satsuma 真的免费吗？",
+        "a": "是的。Satsuma 基于 AGPL-3.0 许可证免费开源：没有试用期，没有水印，无需账户，也没有广告。开发依靠自愿捐助支持。"
+      },
+      {
+        "q": "为什么 Windows 会显示 SmartScreen 警告？",
+        "a": "Satsuma 是开源项目，由于代码签名证书价格昂贵，目前的安装包尚未签名。对于下载次数不多的未签名应用，Windows SmartScreen 都会发出警告。要继续安装，请点击<strong>更多信息</strong> → <strong>仍要运行</strong>。如果想先确认，完整源代码是公开的，你也可以自己构建。"
+      },
+      {
+        "q": "需要联网吗？",
+        "a": "不需要。转换、压缩和编辑都在你的电脑上完成，使用应用内置的引擎。Satsuma 从不上传你的文件，也不会向外发送任何数据。"
+      },
+      {
+        "q": "支持哪些 Windows 版本？",
+        "a": "64 位的 Windows 10 和 Windows 11。安装程序不需要管理员权限，只会为你的用户账户安装 Satsuma。"
+      },
+      {
+        "q": "需要安装 Microsoft Office 吗？",
+        "a": "大多数情况下不需要。图像、音频、视频、PDF、字幕和压缩包完全由 Satsuma 自己处理。对于文档和电子表格，如果安装了 Microsoft Office 或 LibreOffice，Satsuma 会优先使用以获得最佳效果，否则使用内置转换器。演示文稿（PPT、PPTX、ODP）需要 PowerPoint 或免费的 LibreOffice。"
+      },
+      {
+        "q": "可以更改按键吗？",
+        "a": "可以。从托盘图标打开“设置”，为每个轮盘选择其他按键，或启用<strong>发送到 → Satsuma</strong> 以及文件资源管理器的右键菜单。"
+      },
+      {
+        "q": "如何卸载 Satsuma？",
+        "a": "打开 Windows 设置 → 应用 → 安装的应用（Windows 10 中为“应用和功能”），找到 Satsuma 并选择卸载。使用便携版 ZIP？从托盘图标退出 Satsuma，然后删除其文件夹即可。"
+      },
+      {
+        "q": "设置保存在哪里？",
+        "a": "保存在 {appdata} 中，日志文件也在这里。删除该文件夹即可重置 Satsuma，或在卸载后清除所有痕迹。"
+      }
+    ]
+  },
+  "final": {
+    "title": "随时可以开始",
+    "lead": "下载 Satsuma，拖动你的第一个文件，然后按下 {shift}。"
+  },
+  "footer": {
+    "copyright": "{year} {author}",
+    "source": "源代码",
+    "donate": "捐助",
+    "privacy": "本网站不使用 Cookie、跟踪器或分析工具。"
+  },
+  "notfound": {
+    "title": "找不到页面",
+    "body": "这个页面不存在——不过你的文件仍安全地保存在你的电脑上。",
+    "home": "返回 Satsuma"
+  }
+}

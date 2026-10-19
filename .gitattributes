@@ -1,0 +1,11 @@
+# Store text with LF; Windows checkouts still get native line endings where needed.
+* text=auto eol=lf
+*.ps1 text eol=crlf
+*.iss text eol=crlf
+*.bat text eol=crlf
+
+# Binary assets
+*.png binary
+*.webp binary
+*.ico binary
+*.jpg binary
