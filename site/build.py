@@ -11,6 +11,9 @@ Everything a maintainer is expected to change lives in site/config.json:
 version, download size, site/repo/donate URLs, author and year. Empty URLs are
 handled: no repo -> no GitHub links and a "coming soon" download note; no donate URL ->
 no donate buttons; no site URL -> relative links and no sitemap.xml.
+"show_repo_links": false keeps the download buttons (they fetch from the repo's
+releases) but hides every link to a GitHub page: nav, source, issues, translate,
+all releases, footer, and the license then points at gnu.org.
 """
 from __future__ import annotations
 
@@ -222,6 +225,7 @@ def add_csp(page: str) -> str:
 def page_ctx(code: str, cfg: dict, strings: dict, *, is404: bool = False) -> dict:
     site = cfg.get("site_url", "").strip().rstrip("/")
     repo = cfg.get("repo_url", "").strip().rstrip("/")
+    repo_links = bool(repo) and bool(cfg.get("show_repo_links", True))
     donate = cfg.get("donate_url", "").strip()
     native, og_locale, direction = next((n, o, d) for c, n, o, d in LANGS if c == code)
 
@@ -277,10 +281,10 @@ def page_ctx(code: str, cfg: dict, strings: dict, *, is404: bool = False) -> dic
             "og_locale": og_locale, "root": root, "is404": is404, "home": root if is404 else "./", "is_root": code == "en" and not is404,
             "site": site, "canonical": abs_url(code),
             "og_image": (f"{site}/" if site else root) + f"assets/img/og-{code}.png",
-            "has_repo": bool(repo), "repo_url": repo,
+            "has_repo": bool(repo), "repo_url": repo, "repo_links": repo_links,
             "issues_url": f"{repo}/issues" if repo else "",
             "translate_url": f"{repo}/tree/main/satsuma/locales" if repo else "",
-            "license_url": f"{repo}/blob/main/LICENSE" if repo else "https://www.gnu.org/licenses/agpl-3.0.html",
+            "license_url": f"{repo}/blob/main/LICENSE" if repo_links else "https://www.gnu.org/licenses/agpl-3.0.html",
             "download_url": f"{repo}/releases/latest/download/Satsuma-Setup.exe" if repo else "#download",
             "zip_url": f"{repo}/releases/latest/download/Satsuma-win64.zip" if repo else "",
             "releases_url": f"{repo}/releases" if repo else "",

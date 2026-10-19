@@ -136,8 +136,8 @@
     "title": "Software libre, hecho a la vista de todos",
     "body": "Satsuma se distribuye bajo la licencia GNU AGPL-3.0. Cualquiera puede leer el código, compilarlo, mejorarlo y compartirlo.",
     "points": [
-      "Todo el código fuente es público en GitHub.",
-      "Los reportes de errores, las ideas y los pull requests son bienvenidos.",
+      "Todo el código fuente es público.",
+      "Los reportes de errores y las ideas son bienvenidos.",
       "Ayuda a traducir Satsuma a más idiomas."
     ],
     "source": "Ver el código",

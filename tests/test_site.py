@@ -91,6 +91,19 @@ def test_empty_urls_render_gracefully(built: Path) -> None:
     assert (built / "sitemap.xml").exists() == bool(cfg["site_url"])
 
 
+def test_repo_links_can_be_hidden(tmp_path: Path) -> None:
+    build = _load_build()
+    cfg = {"version": "9.9.9", "site_url": "", "repo_url": "https://github.com/x/satsuma", "show_repo_links": False,
+           "donate_url": "", "download_size_mb": 123, "author": "A", "year": 2030}
+    out = tmp_path / "out"
+    build.build(out, cfg)
+    for page in [p.read_text(encoding="utf-8") for p in out.rglob("*.html")]:
+        github_links = set(re.findall(r'href="(https://github\.com[^"]*)"', page))
+        assert github_links <= {"https://github.com/x/satsuma/releases/latest/download/Satsuma-Setup.exe",
+                                "https://github.com/x/satsuma/releases/latest/download/Satsuma-win64.zip"}, github_links
+        assert "GitHub" not in page and "github" not in page.replace("github.com/x/satsuma/releases/latest/download", "")
+
+
 def test_links_follow_config(tmp_path: Path) -> None:
     build = _load_build()
     cfg = {"version": "9.9.9", "site_url": "https://example.org/satsuma/", "repo_url": "https://github.com/x/satsuma",

@@ -49,7 +49,7 @@
       <a href="#inside">{{ t.nav.inside }}</a>
       <a href="#privacy">{{ t.nav.privacy }}</a>
       <a href="#faq">{{ t.nav.faq }}</a>
-      {% if v.has_repo %}<a href="{{ v.repo_url }}" rel="noopener">GitHub</a>{% endif %}{% endif %}
+      {% if v.repo_links %}<a href="{{ v.repo_url }}" rel="noopener">GitHub</a>{% endif %}{% endif %}
     </nav>
     <details class="lang">
       <summary><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.6 3.9 5.6 3.9 9s-1.3 6.4-3.9 9c-2.6-2.6-3.9-5.6-3.9-9S9.4 5.6 12 3z"/></svg><span class="vh">{{ t.nav.language }}: </span><span>{{ v.native }}</span></summary>
@@ -86,7 +86,7 @@
         </a>
         <p class="cta-meta">{{ t.hero.version }} · {{ t.hero.size }}</p>
         <p class="cta-sys">{{ t.hero.system }}</p>
-        {% if v.has_repo %}<p class="cta-alt"><a href="{{ v.zip_url }}">{{ t.hero.portable }}</a> · <a href="{{ v.releases_url }}" rel="noopener">{{ t.hero.all_releases }}</a></p>
+        {% if v.has_repo %}<p class="cta-alt"><a href="{{ v.zip_url }}">{{ t.hero.portable }}</a>{% if v.repo_links %} · <a href="{{ v.releases_url }}" rel="noopener">{{ t.hero.all_releases }}</a>{% endif %}</p>
         {% else %}<p class="soon" role="note">{{ t.hero.soon }}</p>
         {% endif %}
       </div>
@@ -207,7 +207,7 @@
         {% for p in t.oss.points %}<li>{{ p }}</li>
         {% endfor %}</ul>
       <p class="links">
-        {% if v.has_repo %}<a class="btn" href="{{ v.repo_url }}" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></svg>{{ t.oss.source }}</a>
+        {% if v.repo_links %}<a class="btn" href="{{ v.repo_url }}" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></svg>{{ t.oss.source }}</a>
         <a class="btn" href="{{ v.issues_url }}" rel="noopener">{{ t.oss.issues }}</a>
         <a class="btn" href="{{ v.translate_url }}" rel="noopener">{{ t.oss.translate }}</a>
         {% endif %}<a class="btn btn-ghost" href="{{ v.license_url }}" rel="noopener license">{{ t.oss.license }}</a>
@@ -255,7 +255,7 @@
 
 <footer class="foot">
   <div class="wrap foot-in">
-    <p>© {{ t.footer.copyright }} · <a href="{{ v.license_url }}" rel="noopener license">AGPL-3.0</a>{% if v.has_repo %} · <a href="{{ v.repo_url }}" rel="noopener">{{ t.footer.source }}</a>{% endif %}{% if v.has_donate %} · <a href="{{ v.donate_url }}" rel="noopener">{{ t.footer.donate }}</a>{% endif %}</p>
+    <p>© {{ t.footer.copyright }} · <a href="{{ v.license_url }}" rel="noopener license">AGPL-3.0</a>{% if v.repo_links %} · <a href="{{ v.repo_url }}" rel="noopener">{{ t.footer.source }}</a>{% endif %}{% if v.has_donate %} · <a href="{{ v.donate_url }}" rel="noopener">{{ t.footer.donate }}</a>{% endif %}</p>
     <p class="small">{{ t.footer.privacy }}</p>
   </div>
 </footer>
