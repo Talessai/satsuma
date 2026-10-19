@@ -1,0 +1,38 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.10.0.schema.json
+
+PackageIdentifier: Talessai.Satsuma
+PackageVersion: 0.1.0
+PackageLocale: en-US
+Publisher: Talal Alawi
+PublisherUrl: https://talessai.github.io/satsuma/
+PublisherSupportUrl: https://github.com/Talessai/satsuma/issues
+Author: Talal Alawi
+PackageName: Satsuma
+PackageUrl: https://talessai.github.io/satsuma/
+License: AGPL-3.0-or-later
+LicenseUrl: https://github.com/Talessai/satsuma/blob/v0.1.0/LICENSE
+Copyright: Copyright (c) 2026 Talal Alawi
+CopyrightUrl: https://github.com/Talessai/satsuma/blob/v0.1.0/LICENSE
+ShortDescription: Zero-click, offline file converter for Windows
+Description: |-
+  Satsuma is a free, open-source tray app that converts and edits files without leaving File Explorer. Start dragging any file or folder, tap Shift, Ctrl or Alt, and a wheel opens under the cursor: drop on a wedge to convert formats (images, audio, video, PDF, documents, slides, spreadsheets, subtitles, archives), run file tools (compress, crop, trim, merge, split, rotate, watermark, redact, metadata, and more) or file actions (share, copy, move, rename, hash, reveal, terminal).
+  Everything runs on your PC. No uploads, no accounts, no telemetry. Available in English, Chinese, Hindi, Spanish and Arabic.
+Moniker: satsuma
+Tags:
+- audio
+- compress
+- converter
+- drag-and-drop
+- file-converter
+- image
+- offline
+- open-source
+- pdf
+- video
+ReleaseNotes: First public release.
+ReleaseNotesUrl: https://github.com/Talessai/satsuma/releases/tag/v0.1.0
+Documentations:
+- DocumentLabel: README
+  DocumentUrl: https://github.com/Talessai/satsuma#readme
+ManifestType: defaultLocale
+ManifestVersion: 1.10.0

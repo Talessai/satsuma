@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.10.0.schema.json
+
+PackageIdentifier: Talessai.Satsuma
+PackageVersion: 0.1.0
+MinimumOSVersion: 10.0.0.0
+InstallerType: inno
+Scope: user
+InstallModes:
+- interactive
+- silent
+- silentWithProgress
+InstallerSwitches:
+  Silent: /VERYSILENT /SUPPRESSMSGBOXES /NORESTART
+  SilentWithProgress: /SILENT /SUPPRESSMSGBOXES /NORESTART
+UpgradeBehavior: install
+ProductCode: '{6F3E2A9C-58B1-4C7E-9A0D-2B7C1E5F4A31}_is1'
+AppsAndFeaturesEntries:
+- DisplayName: Satsuma
+  Publisher: Talal Alawi
+  ProductCode: '{6F3E2A9C-58B1-4C7E-9A0D-2B7C1E5F4A31}_is1'
+  InstallerType: inno
+ReleaseDate: 2026-10-19
+Installers:
+- Architecture: x64
+  InstallerUrl: https://github.com/Talessai/satsuma/releases/download/v0.1.0/Satsuma-Setup.exe
+  InstallerSha256: FA6F14228EA0C53EDE6289B0059DCA87C71D126EA08B06E1958F727C29BCCB50
+ManifestType: installer
+ManifestVersion: 1.10.0
